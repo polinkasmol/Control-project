@@ -41,6 +41,9 @@ body {
       .logo {
          margin-left: 115px;
 
+         @media screen and (max-width: 450px) {
+            margin-left: 30px;
+         }
       }
 
       .nav_link,
@@ -56,6 +59,9 @@ body {
          color: #FFFFFF;
          padding-bottom: 30px;
 
+         @media screen and (max-width: 450px) {
+            display: none;
+         }
 
          &:last-child {
             padding-right: 170px;
@@ -78,7 +84,7 @@ body {
 }
 
 
-/*           @media screen and (max-width: 1000px) {}         */
+/*           @media screen and (max-width: 450px) {}         */
 
 
 /* main*/
@@ -93,10 +99,26 @@ body {
       align-items: center;
       padding: 0 15px;
 
+      @media screen and (max-width: 450px) {
+         flex-direction: column;
+         justify-content: center;
+         padding-bottom: 50px;
+      }
+
       .main_text {
+         @media screen and (max-width: 450px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
 
          .main_logo {
             padding-top: 150px;
+
+            @media screen and (max-width: 450px) {
+               display: none;
+            }
          }
 
          h1 {
@@ -106,7 +128,7 @@ body {
             line-height: 56px;
             display: flex;
             align-items: center;
-            text-transform: uppercase;
+
 
             color: #FFFFFF;
             max-width: 670px;
@@ -115,6 +137,12 @@ body {
             @media screen and (max-width: 1000px) {
                font-size: 36px;
                line-height: 42px;
+            }
+
+            @media screen and (max-width: 450px) {
+               margin-right: 0px;
+               text-align: center;
+               margin-top: 80px;
             }
          }
 
@@ -133,6 +161,11 @@ body {
             @media screen and (max-width: 1000px) {
                font-size: 14px;
                line-height: 16px;
+            }
+
+            @media screen and (max-width: 450px) {
+               text-align: center;
+               margin: 40px 0;
             }
          }
 
@@ -155,6 +188,11 @@ body {
 
                @media screen and (max-width: 1000px) {
                   width: 185px;
+               }
+
+               @media screen and (max-width: 450px) {
+                  width: 270px;
+                  margin: 0 0 60px;
                }
 
                & span {
@@ -191,6 +229,10 @@ body {
             max-width: 400px;
          }
 
+         @media screen and (max-width: 450px) {
+            max-width: 300px;
+         }
+
          .form_text {
             font-family: 'Open Sans';
             font-weight: 700;
@@ -203,6 +245,11 @@ body {
             text-align: center;
 
             color: #333333;
+
+            @media screen and (max-width: 450px) {
+               font-size: 18px;
+               line-height: 19px;
+            }
 
             & p {
                color: #EC7979;
@@ -234,6 +281,10 @@ body {
                @media screen and (max-width: 1000px) {
                   width: 300px;
                }
+
+               @media screen and (max-width: 450px) {
+                  max-width: 240px;
+               }
             }
 
             input[type="text"]:focus,
@@ -254,6 +305,10 @@ body {
 
             @media screen and (max-width: 1000px) {
                width: 400px;
+            }
+
+            @media screen and (max-width: 450px) {
+               max-width: 300px;
             }
 
             & span {
@@ -298,7 +353,10 @@ body {
       justify-content: center;
       align-items: center;
 
-
+      @media screen and (max-width: 450px) {
+         flex-direction: column;
+         margin: 0 15px;
+      }
 
       .social_media_text {
          margin-right: 200px;
@@ -312,6 +370,12 @@ body {
             margin-right: 10px;
          }
 
+         @media screen and (max-width: 450px) {
+            margin-right: 0;
+            margin-left: 0;
+            padding: 0 15px;
+         }
+
          &_main {
             font-family: 'Open Sans';
             font-weight: 700;
@@ -323,6 +387,10 @@ body {
             @media screen and (max-width: 1000px) {
                font-size: 18px;
                line-height: 25px;
+            }
+
+            @media screen and (max-width: 450px) {
+               text-align: center;
             }
          }
 
@@ -340,6 +408,10 @@ body {
                font-size: 14px;
                line-height: 16px;
             }
+
+            @media screen and (max-width: 450px) {
+               text-align: center;
+            }
          }
       }
 
@@ -349,7 +421,7 @@ body {
    }
 }
 
-/*           @media screen and (max-width: 1000px) {}         */
+/*            @media screen and (max-width: 450px) {}           */
 
 
 /* tabs */
@@ -357,6 +429,10 @@ body {
 .tabs {
    &_wrapper {
       margin: 100px 100px 50px;
+
+      @media screen and (max-width: 450px) {
+         margin: 100px 15px 50px;
+      }
 
       .tab {
          overflow: hidden;
@@ -397,6 +473,11 @@ body {
          display: flex;
          justify-content: space-between;
 
+         @media screen and (max-width: 450px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
 
          .tab_text {
             margin-left: 50px;
@@ -420,6 +501,10 @@ body {
                   font-size: 24px;
                   line-height: 33px;
                }
+
+               @media screen and (max-width: 450px) {
+                  text-align: center;
+               }
             }
 
             &_all {
@@ -438,6 +523,17 @@ body {
                   font-size: 14px;
                   line-height: 16px;
                }
+
+               @media screen and (max-width: 450px) {
+                  text-align: center;
+               }
+            }
+
+            .t-b {
+               @media screen and (max-width: 450px) {
+                  display: flex;
+                  justify-content: center;
+               }
             }
 
             .tab_button {
@@ -452,6 +548,10 @@ body {
 
                @media screen and (max-width: 1000px) {
                   width: 230px;
+               }
+
+               @media screen and (max-width: 450px) {
+                  width: 250px;
                }
 
                & span {
@@ -480,6 +580,10 @@ body {
 
          .tab_img {
             max-width: 100%;
+
+            @media screen and (max-width: 450px) {
+               display: none;
+            }
          }
       }
    }
@@ -533,6 +637,11 @@ body {
       .about_colums {
          display: flex;
          justify-content: space-between;
+
+         @media screen and (max-width: 450px) {
+            flex-direction: column;
+            justify-content: center;
+         }
 
          .colum {
             display: flex;
@@ -632,6 +741,12 @@ body {
          justify-content: space-between;
          margin-top: 70px;
 
+         @media screen and (max-width: 450px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+
          .optimal {
             max-width: 370px;
             width: 100%;
@@ -654,6 +769,14 @@ body {
             @media screen and (max-width: 935px) {
                max-width: 260px;
             }
+
+            @media screen and (max-width: 450px) {
+               transform: translate(0, 0);
+               max-width: 288px;
+               box-shadow: 0 0 0px;
+               margin: 25px 0;
+            }
+
          }
 
          .pricing_options_grids {
@@ -676,6 +799,11 @@ body {
 
             @media screen and (max-width: 935px) {
                max-width: 260px;
+            }
+
+            @media screen and (max-width: 450px) {
+
+               max-width: 288px;
             }
 
             &_grid-1 {
@@ -768,7 +896,9 @@ body {
 .reviews {
    &_wrapper {
       margin-top: 100px;
-
+      @media screen and (max-width: 450px){
+         margin-top: 60px;
+      }
       .reviews_main-text {
          font-family: 'Raleway';
          font-weight: 400;
@@ -784,6 +914,9 @@ body {
          @media screen and (max-width: 1000px) {
             font-size: 24px;
             line-height: 28px;
+         }
+         @media screen and (max-width: 450px){
+            margin: 0 15px;
          }
       }
 
@@ -811,6 +944,11 @@ body {
 
          @media screen and (max-width: 1000px) {
             margin: 80px 15px 60px;
+         }
+         @media screen and (max-width: 450px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
          }
 
          .reviews_coments {
@@ -898,6 +1036,16 @@ body {
                }
 
             }
+         }
+         .reviews_coments-2{
+            @media screen and (max-width: 450px) {
+               display: none;
+            }     
+         }
+         .reviews_coments-3{
+            @media screen and (max-width: 450px) {
+               display: none;
+            }     
          }
       }
 
@@ -1007,9 +1155,11 @@ body {
 .contacts {
    &_wrapper {
       margin-top: 100px;
+
       @media screen and (max-width: 1000px) {
          margin-top: 50px;
       }
+
       .contacts_main-text {
          font-family: 'Raleway';
          font-weight: 400;
@@ -1069,7 +1219,7 @@ body {
                font-size: 15px;
                transition: 0.2s ease;
 
-               @media screen and (max-width: 1080px){
+               @media screen and (max-width: 1080px) {
                   width: 410px;
                }
             }
@@ -1098,7 +1248,7 @@ body {
                font-size: 15px;
                transition: 0.2s ease;
 
-               @media screen and (max-width: 1080px){
+               @media screen and (max-width: 1080px) {
                   width: 410px;
                }
             }
@@ -1163,9 +1313,10 @@ body {
          display: flex;
          justify-content: space-between;
          margin: 0 270px;
+
          @media screen and (max-width: 1000px) {
             margin: 0 100px;
-         } 
+         }
       }
 
       .footer_text {

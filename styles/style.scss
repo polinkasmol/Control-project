@@ -38,7 +38,6 @@ body {
       justify-content: space-between;
       text-transform: uppercase;
 
-
       .logo {
          margin-left: 115px;
 
@@ -61,16 +60,25 @@ body {
          &:last-child {
             padding-right: 170px;
 
+            @media screen and (max-width: 1170px) {
+               padding-right: 50px;
+            }
          }
 
          &-1 {
             padding-left: 300px;
 
+            @media screen and (max-width: 1170px) {
+               padding-left: 50px;
+            }
          }
       }
 
    }
 }
+
+
+/*           @media screen and (max-width: 1000px) {}         */
 
 
 /* main*/
@@ -83,6 +91,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 15px;
 
       .main_text {
 
@@ -101,7 +110,12 @@ body {
 
             color: #FFFFFF;
             max-width: 670px;
+            margin-right: 20px;
 
+            @media screen and (max-width: 1000px) {
+               font-size: 36px;
+               line-height: 42px;
+            }
          }
 
 
@@ -116,7 +130,13 @@ body {
             color: #FFFFFF;
             max-width: 400px;
 
+            @media screen and (max-width: 1000px) {
+               font-size: 14px;
+               line-height: 16px;
+            }
          }
+
+/*           @media screen and (max-width: 1000px) {}         */
 
          .m-b {
 
@@ -132,6 +152,10 @@ body {
                justify-content: center;
                margin-top: 40px;
                margin-bottom: 180px;
+
+               @media screen and (max-width: 1000px) {
+                  width: 185px;
+               }   
 
                & span {
                   font-family: 'Open Sans';
@@ -162,6 +186,10 @@ body {
          border-radius: 10px;
          max-width: 470px;
          max-height: 450px;
+
+         @media screen and (max-width: 1000px) {
+            max-width: 400px;
+         } 
 
          .form_text {
             font-family: 'Open Sans';
@@ -202,6 +230,10 @@ body {
                font-weight: 400;
                font-size: 15px;
                transition: 0.2s ease;
+
+               @media screen and (max-width: 1000px) {
+                  width: 300px;
+               } 
             }
 
             input[type="text"]:focus,
@@ -214,12 +246,15 @@ body {
 
          .form_button {
             height: 60px;
-            min-width: 470px;
+            width: 470px;
 
             background: #EC7979;
             border-radius: 0px 0px 10px 10px;
             margin-top: 53px;
 
+            @media screen and (max-width: 1000px) {
+               width: 400px;
+            } 
 
             & span {
                font-family: 'Open Sans';

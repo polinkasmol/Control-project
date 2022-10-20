@@ -415,9 +415,23 @@ body {
          }
       }
 
-      .social_media_img {
-         max-width: 100%;
+      .social_media_icon {
+         overflow: hidden;
+         position: relative;
+
+
+         .social_media_img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: 450px) {
+               width: 100%;
+               max-width: 30px;
+            }
+         }
       }
+
    }
 }
 
@@ -896,9 +910,11 @@ body {
 .reviews {
    &_wrapper {
       margin-top: 100px;
-      @media screen and (max-width: 450px){
+
+      @media screen and (max-width: 450px) {
          margin-top: 60px;
       }
+
       .reviews_main-text {
          font-family: 'Raleway';
          font-weight: 400;
@@ -915,7 +931,8 @@ body {
             font-size: 24px;
             line-height: 28px;
          }
-         @media screen and (max-width: 450px){
+
+         @media screen and (max-width: 450px) {
             margin: 0 15px;
          }
       }
@@ -945,10 +962,12 @@ body {
          @media screen and (max-width: 1000px) {
             margin: 80px 15px 60px;
          }
+
          @media screen and (max-width: 450px) {
             display: flex;
             justify-content: center;
             align-items: center;
+            
          }
 
          .reviews_coments {
@@ -1037,15 +1056,17 @@ body {
 
             }
          }
-         .reviews_coments-2{
+
+         .reviews_coments-2 {
             @media screen and (max-width: 450px) {
                display: none;
-            }     
+            }
          }
-         .reviews_coments-3{
+
+         .reviews_coments-3 {
             @media screen and (max-width: 450px) {
                display: none;
-            }     
+            }
          }
       }
 
@@ -1202,6 +1223,10 @@ body {
          align-items: center;
          margin: 60px 20px 0;
 
+         @media screen and (max-width: 450px) {
+            flex-direction: column;
+         }
+
          .blank_left {
 
             input[type="text"],
@@ -1221,6 +1246,10 @@ body {
 
                @media screen and (max-width: 1080px) {
                   width: 410px;
+               }
+
+               @media screen and (max-width: 450px) {
+                  width: 350px;
                }
             }
 
@@ -1251,6 +1280,10 @@ body {
                @media screen and (max-width: 1080px) {
                   width: 410px;
                }
+
+               @media screen and (max-width: 450px) {
+                  width: 350px;
+               }
             }
 
             input[type="message"]:focus {
@@ -1272,6 +1305,10 @@ body {
             width: 370px;
             height: 60px;
 
+            @media screen and (max-width: 450px) {
+               max-width: 350px;
+               width: 100%;
+            }
 
             span {
                font-family: 'Open Sans';
@@ -1317,6 +1354,21 @@ body {
          @media screen and (max-width: 1000px) {
             margin: 0 100px;
          }
+         @media screen and (max-width: 450px) {
+            margin: 0;
+            padding: 30px 15px;
+         }
+
+         .footer_img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: 450px) {
+              max-width: 30px;
+            }
+         }
+
       }
 
       .footer_text {

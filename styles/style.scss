@@ -7,6 +7,11 @@
    font-family: "Open Sans";
    src: url(/styles/fonts/opensans/OpenSans-Regular.woff);
 }
+.html{
+   width: 100%;
+   max-width: 100%;
+   overflow-x: hidden;
+}
 
 .container {
    margin: 0 auto;
@@ -18,7 +23,13 @@ body {
    font-family: "Raleway";
    margin: 0;
    padding: 0;
+
+   width: 100%;
+   max-width: 100%;
+   overflow-x: hidden;
+
 }
+
 
 .separator {
    display: flex;
@@ -355,7 +366,7 @@ body {
 
       @media screen and (max-width: 450px) {
          flex-direction: column;
-         margin: 0 15px;
+         padding: 30px 15px;
       }
 
       .social_media_text {
@@ -373,7 +384,7 @@ body {
          @media screen and (max-width: 450px) {
             margin-right: 0;
             margin-left: 0;
-            padding: 0 15px;
+            padding: 0 20px;
          }
 
          &_main {
@@ -411,6 +422,7 @@ body {
 
             @media screen and (max-width: 450px) {
                text-align: center;
+               padding: 0 20px;
             }
          }
       }
@@ -419,14 +431,12 @@ body {
          overflow: hidden;
          position: relative;
 
-
          .social_media_img {
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
 
             @media screen and (max-width: 450px) {
-               width: 100%;
                max-width: 30px;
             }
          }
@@ -646,6 +656,11 @@ body {
             font-size: 14px;
             line-height: 16px;
          }
+
+         @media screen and (max-width: 450px) {
+            padding: 0 15px;
+         }
+
       }
 
       .about_colums {
@@ -952,6 +967,10 @@ body {
             font-size: 14px;
             line-height: 16px;
          }
+
+         @media screen and (max-width: 450px) {
+            padding: 0 15px;
+         }
       }
 
       .all_reviews_coments {
@@ -967,7 +986,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
          }
 
          .reviews_coments {
@@ -1121,6 +1140,10 @@ body {
             line-height: 16px;
          }
 
+         @media screen and (max-width: 450px) {
+            padding: 0 15px;
+         }
+
       }
 
       .design_button_wrapper {
@@ -1213,6 +1236,10 @@ body {
          @media screen and (max-width: 1000px) {
             font-size: 14px;
             line-height: 16px;
+         }
+
+         @media screen and (max-width: 450px) {
+            padding: 0 15px;
          }
       }
 
@@ -1354,6 +1381,7 @@ body {
          @media screen and (max-width: 1000px) {
             margin: 0 100px;
          }
+
          @media screen and (max-width: 450px) {
             margin: 0;
             padding: 30px 15px;
@@ -1365,7 +1393,7 @@ body {
             object-fit: cover;
 
             @media screen and (max-width: 450px) {
-              max-width: 30px;
+               max-width: 30px;
             }
          }
 
